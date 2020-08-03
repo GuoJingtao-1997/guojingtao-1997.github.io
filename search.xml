@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/archives/4a17b156.html"/>
+      <url>/archives/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>手把手教你用 GitHub+PicGo+jsDelivr 搭建免费的博客图床</title>
+      <link href="/archives/1d23231.html"/>
+      <url>/archives/1d23231.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>利用 <em>GitHub</em> 和 <em>PicGo</em> 可以很方便的搭建私人图床</p></blockquote><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li><p>实现图片文件的固定链接访问，使 <code>Markdown</code> 格式文章插入图片更方便</p></li><li><p><code>GitHub</code> 仓库搭建图床操作简单且无需额外付费</p></li><li><p><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDelivr</a> <code>CDN</code> 加速访问，解决国内 <code>GitHub</code> 访问速度慢的问题</p></li></ul><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h3 id="注册-GitHub-账号"><a href="#注册-GitHub-账号" class="headerlink" title="注册 GitHub 账号"></a>注册 GitHub 账号</h3><p>在配置 <code>GitHub</code> 仓库之前我们要先拥有一个 <code>GitHub</code> 账号，如果你还没有的话，不妨点击<a href="https://github.com/join" title="github注册链接" target="_blank" rel="noopener">这里</a>前往注册。</p><h3 id="创建-GitHub-仓库"><a href="#创建-GitHub-仓库" class="headerlink" title="创建 GitHub 仓库"></a>创建 GitHub 仓库</h3><p>注册完毕后我们会看到以下界面，这里我们点击 <code>New</code> 创建一个新仓库 </p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125202.jpg" alt="GitHub 界面"></p><p>点击 <code>New</code> 之后页面会跳转至如下界面，在该界面我们需要对仓库进行配置，具体填写步骤可参考图片内的指引  </p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517153638.jpg" alt="配置仓库属性"></p><blockquote><p><strong>注：</strong> 仓库类型如果选为私有，则在 <em>PicGo</em> 的相册中将看不到上传后的图片，建议设为公有，因此我们在上传图片到图床时要注意保护个人隐私  </p></blockquote><p>设置完毕后点击下方按钮即可创建仓库，仓库的界面如下图</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517181126.jpg" alt="仓库界面"></p><h3 id="生成-token"><a href="#生成-token" class="headerlink" title="生成 token"></a>生成 token</h3><p>在使用 <code>GitHub</code> 图床时我们需要先生成一个 <a href="https://baike.baidu.com/item/Token/2615248" target="_blank" rel="noopener">token</a>,生成过程也十分简单。</p><p>首先我们点击 <code>GitHub</code> 首页的用户头像并点击 <code>Settings</code> 进入设置界面，如图</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517204558.jpg" alt="Settings 界面"></p><p>进入之后我们下拉至底部，点击 <code>Developer settings</code> 并选择第三个选项后，点击右上角的 <code>Generate new token</code> 进入配置界面，根据下图完成 <code>token</code> 的配置，并下拉至底部点击 <code>Generate token</code> 完成 <code>token</code> 的生成，之后即可直接将 <code>token</code> 复制到 <code>PicGo</code> 中。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125204.jpg" alt="配置 token"></p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125206.jpg" alt="生成的 token"></p><blockquote><p><strong>注：</strong>  <em>token</em> 只出现一次，因此我们需将其备份起来</p></blockquote><h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><h3 id="下载-PicGo"><a href="#下载-PicGo" class="headerlink" title="下载 PicGo"></a>下载 PicGo</h3><p>在使用 <code>PicGo</code> 前我们需要先到以下链接去下载,建议选择最新的稳定版本，<code>Beta</code> 版本稳定性相对没那么好。</p><p><a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo/releases</a></p><p>如果不是下载安装包，想看源码的话，可以选择 <code>git clone https://github.com/Molunerfinn/PicGo.git</code> 克隆到本地</p><blockquote><p><strong>注：</strong> <code>Mac</code> 用户选择 <code>.dmg</code> 下载， <code>Windows</code> 用户选择 <code>.exe</code> 下载。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200518210625.jpg" alt="下载界面"></p><p>安装完毕，打开后会以小图标形式显示在屏幕右下角，点击小图标即可打开详细窗口，窗口界面还是十分简洁大方的。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200518210623.jpg" alt="PicGo 小图标"></p><h3 id="配置-PicGo"><a href="#配置-PicGo" class="headerlink" title="配置 PicGo"></a>配置 PicGo</h3><p>之后打开 <code>PicGo</code> 选择 <code>GitHub</code> 图床进行配置</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125205.jpg" alt="PicGo 界面"></p><ul><li><p>仓库名的格式为 <code>用户名/仓库</code> 比如我之前创建了一个 <code>PicBed</code> 的仓库，则我需要填入 <code>GuoJingtao-1997/PicBed</code>， 分支名一般填写 <code>master</code>，<code>token</code> 则输入之前我们已生成并备份好的 <code>token</code> </p></li><li><p>指定存储路径可选填，若填写则上传图片时 <code>GitHub</code> 仓库会自动创建新文件夹来保存图片</p></li><li><p>设置自定义域名会使 <code>PicGo</code> 生成的访问链接为 <code>自定义域名+文件名</code> 的格式，而由于国内访问 <code>GitHub</code> 的速度比较慢，因此我们需要使用 <code>jsDelivr CDN</code> 进行加速，将自定义域名设置为 <code>https://cdn.jsdelivr.net/gh/用户名/图床仓库名</code> 即可</p></li></ul><h3 id="使用-PicGo"><a href="#使用-PicGo" class="headerlink" title="使用 PicGo"></a>使用 PicGo</h3><p>接下来就可以愉快的开耍 <code>PicGo</code> 啦，选择相应的格式并将图片拖至相应位置即可上传，之后在相册中选择自己想要的格式并点击相应的图片下方最左侧的按钮即可复制图片的链接，上传图片的格式一般采用 <code>.jpg</code>，同时为了减轻 <code>GitHub</code> 服务器的压力，建议在上传图片前可以对其进行压缩，下面提供一个可进行无损压缩的网站供大家使用</p><p><a href="https://tinypng.com/" target="_blank" rel="noopener">https://tinypng.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517153639.jpg" alt="PicGo 相册界面"></p><blockquote><p><strong>注：</strong> 有时会出现上传失败的情况，这时可以尝试将 <em>PicGo设置</em> 里的 <em>设置Server</em> 关闭后再打开或者重启 <em>PicGo</em></p></blockquote><p>大家可以自行探索 <code>PicGo</code> 的其他用法，希望本文的内容对大家有所帮助，也欢迎大家在下方留言指出其中错误或遗漏的地方。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 图床 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GitHub </tag>
+            
+            <tag> PicGo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客开源</title>
+      <link href="/archives/e3e08109.html"/>
+      <url>/archives/e3e08109.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h1><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/shw2018/cdn/master/blog_files/img/Blog-Open-Source/blog-demo1.gif" alt="演示Demo"></p><h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的<code>blog</code>网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎PR！最后，我们还是给这个开源小项目取个名字吧，就叫<a href="https://github.com/shw2018/hexo-blog-fly.git" target="_blank" rel="noopener">hexo-blog-fly</a>吧，怎么样？&lt;&lt;&lt;&lt;&lt;<a href="https://github.com/shw2018/hexo-blog-fly" target="_blank" rel="noopener">源代码下载</a>&gt;&gt;&gt;&gt;&gt;</p><p>本博客基于<code>Hexo</code>框架搭建，用到<a href="https://github.com/shw2018/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题, 并在此基础之上做了很多修改，修复了一些bug，增加了一些新的特性和功能，博客地址：<a href="https://shw2018.github.io/" target="_blank" rel="noopener">https://shw2018.github.io</a>，博客演示：<a href="https://sunhwee.com" target="_blank" rel="noopener">sunhwee.com</a>。</p><hr><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p><strong>原主题特性</strong>:</p><ul><li><p>简单漂亮，文章内容美观易读</p></li><li><p><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</p></li><li><p>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</p></li><li><p>首页轮播文章及每天动态切换 <code>Banner</code> 图片</p></li><li><p>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</p></li><li><p>时间轴式的归档页</p></li><li><p><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</p></li><li><p>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</p></li><li><p>可自定义的数据的友情链接页面</p></li><li><p>支持文章置顶和文章打赏</p></li><li><p>支持 <code>MathJax</code></p></li><li><p><code>TOC</code> 目录</p></li><li><p>可设置复制文章内容时追加版权信息</p></li><li><p>可设置阅读文章时做密码验证</p></li><li><p><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</p></li><li><p>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</p></li><li><p>支持在首页的音乐播放和视频播放功能</p><p><strong>增加的工作或特性(未打钩的是已做但还没更新到源码的)</strong>:</p></li><li><p>修改了原主题的一些很多<code>bug</code>   2019.08.05</p></li><li><p>加入图片懒加载功能，在根目录配置文件开启和关闭    2019.08.09</p></li><li><p>增加<code>留言板</code>功能          2019.08.05</p></li><li><p>在关于板块,加入<code>简历</code>功能页   2019.08.05</p></li><li><p>增加视听[视觉听觉影音]板块       2019.08.10</p></li><li><p>支持<code>emoji</code>表情，用<code>markdown emoji</code>语法书写直接生成对应的能<strong>跳跃</strong>的表情。  2019.08.10</p></li><li><p>增加网站运行时间显示  2019.08.10</p></li><li><p>增加<code>动漫模型</code>     2019.08.10</p></li><li><p>整体替换Banner图片和文章特色图片   2019.08.10</p></li><li><p>增加分类<code>相册</code>功能         2019.08.29</p></li><li><p>去掉标签页,将其合并至<code>分类</code>页中                2019.09.01</p></li><li><p>修改了一些控件的参数   2019.09.01</p></li><li><p>修改部分样式,比如: 文章卡片,固定高度,使其不至于因为文章摘要的长短不同导致卡片大小不一使页面布局很不美观,类似的还有友链卡片,优化了页面内容布局,视觉更整齐美观          2019.09.01</p></li><li><p>解决首页文章列表卡片上方 <code>border-radius</code>圆角失效的bug  2019.09.01</p></li><li><p>添加页面樱花飘落动效            2019.09.09</p></li><li><p>添加鼠标点击烟花爆炸动效   2019.09.09</p></li><li><p>加入天气接口控件   2019.09.09</p></li><li><p>加入鼠标点击文字特效   2019.09.10</p></li><li><p>添加页面雪花飘落动效            2019.09.10</p></li><li><p>添加在线聊天插件            2019.09.12</p></li><li><p>持续更新…</p></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>更多详情教程，强烈推荐看我写的：<a href="https://sunhwee.com/posts/6e8839eb.html" target="_blank" rel="noopener">Hexo+Github博客搭建完全教程</a></strong></p></blockquote><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Github </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

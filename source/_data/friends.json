@@ -1,0 +1,27 @@
+[
+    {
+	    "avatar": "/medias/avatars/JTGuo.jpg",
+	    "name": "景涛の小作坊",
+	    "introduction": "PolyU EIEer",
+	    "url": "https://guojingtao-1997.github.io/",
+	    "title": "偷看一下"
+    },{
+        "name": "PolyUEIE",
+        "url": "https://www.eie.polyu.edu.hk/home/news-corner.html",
+        "title": "访问主页",
+        "introduction": "PolyU电子及资讯工程学系欢迎您的加入！",
+        "avatar": "/medias/avatars/polyUeie.png"
+    },{
+        "name": "Blinkfox",
+        "url": "https://blinkfox.github.io",
+        "title": "前去学习",
+        "introduction": "闪烁之狐大佬做的hexo主题很棒，人也比较好！",
+        "avatar": "https://blinkfox.github.io/medias/avatar.jpg"
+    },{
+	    "avatar": "/medias/avatars/hwsun.jpg",
+        "name": "洪卫の博客",
+        "title": "前去学习",
+	    "introduction": "洪卫大佬的博客，hexo-matery主题升级版，添加了许多新功能，很棒！",
+	    "url": "http://sunhwee.com"
+    }
+]

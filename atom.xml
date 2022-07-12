@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>景涛の小作坊</title>
+  
+  <subtitle>Jason Kwok</subtitle>
+  <link href="https://guojingtao-1997.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://guojingtao-1997.github.io/"/>
+  <updated>2022-07-03T07:55:25.397Z</updated>
+  <id>https://guojingtao-1997.github.io/</id>
+  
+  <author>
+    <name>景涛</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS61A Disc09 - Linked Lists &amp; Trees</title>
+    <link href="https://guojingtao-1997.github.io/archives/4fd3fcd6.html"/>
+    <id>https://guojingtao-1997.github.io/archives/4fd3fcd6.html</id>
+    <published>2021-01-06T00:00:00.000Z</published>
+    <updated>2022-07-03T07:55:25.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;CS61A Summer20 Disc09&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我已经将目前完成的作业代码放到 &lt;code&gt;github&lt;/code&gt; 上， 有兴趣的小伙伴可以去 &lt;code&gt;fork&lt;/code&gt; 一份源码到你的仓库并</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://guojingtao-1997.github.io/categories/Python/"/>
+    
+    
+    <category term="Disc09" scheme="https://guojingtao-1997.github.io/tags/Disc09/"/>
+    
+    <category term="CS61A Summer20" scheme="https://guojingtao-1997.github.io/tags/CS61A-Summer20/"/>
+    
+    <category term="SICP for Python" scheme="https://guojingtao-1997.github.io/tags/SICP-for-Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手教你用 GitHub+PicGo+jsDelivr 搭建免费的博客图床</title>
+    <link href="https://guojingtao-1997.github.io/archives/1d23231.html"/>
+    <id>https://guojingtao-1997.github.io/archives/1d23231.html</id>
+    <published>2020-05-16T00:00:00.000Z</published>
+    <updated>2021-01-06T13:21:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;利用 &lt;em&gt;GitHub&lt;/em&gt; 和 &lt;em&gt;PicGo&lt;/em&gt; 可以很方便的搭建私人图床&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;特点&quot;&gt;特点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;实现图片文件的固定链接访问，使</summary>
+        
+      
+    
+    
+    
+    <category term="图床" scheme="https://guojingtao-1997.github.io/categories/%E5%9B%BE%E5%BA%8A/"/>
+    
+    
+    <category term="GitHub" scheme="https://guojingtao-1997.github.io/tags/GitHub/"/>
+    
+    <category term="PicGo" scheme="https://guojingtao-1997.github.io/tags/PicGo/"/>
+    
+  </entry>
+  
+</feed>

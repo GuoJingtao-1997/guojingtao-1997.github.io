@@ -1,0 +1,1 @@
+.pjax_progress{position:fixed;top:0;left:0;width:10%;height:2px;z-index:103;background:linear-gradient(130deg,#ff0,red);transition:width .4s ease 0s}

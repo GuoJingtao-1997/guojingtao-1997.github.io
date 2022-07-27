@@ -1,105 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>手把手教你用 GitHub+PicGo+jsDelivr 搭建免费的博客图床</title>
-    <url>/archives/1d23231.html</url>
-    <content><![CDATA[<blockquote>
-<p>利用 <em>GitHub</em> 和 <em>PicGo</em> 可以很方便的搭建私人图床</p>
-</blockquote>
-<h2 id="特点">特点</h2>
-<ul>
-<li>
-<p>实现图片文件的固定链接访问，使 <code>Markdown</code> 格式文章插入图片更方便</p>
-</li>
-<li>
-<p><code>GitHub</code> 仓库搭建图床操作简单且无需额外付费</p>
-</li>
-<li>
-<p><a href="https://www.jsdelivr.com/">jsDelivr</a> <code>CDN</code> 加速访问，解决国内 <code>GitHub</code> 访问速度慢的问题</p>
-</li>
-</ul>
-<h2 id="GitHub">GitHub</h2>
-<h3 id="注册-GitHub-账号">注册 GitHub 账号</h3>
-<p>在配置 <code>GitHub</code> 仓库之前我们要先拥有一个 <code>GitHub</code> 账号，如果你还没有的话，不妨点击<a href="https://github.com/join" title="github注册链接">这里</a>前往注册。</p>
-<h3 id="创建-GitHub-仓库">创建 GitHub 仓库</h3>
-<p>注册完毕后我们会看到以下界面，这里我们点击 <code>New</code> 创建一个新仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125202.jpg" alt="GitHub 界面"></p>
-<p>点击 <code>New</code> 之后页面会跳转至如下界面，在该界面我们需要对仓库进行配置，具体填写步骤可参考图片内的指引</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517153638.jpg" alt="配置仓库属性"></p>
-<blockquote>
-<p><strong>注：</strong> 仓库类型如果选为私有，则在 <em>PicGo</em> 的相册中将看不到上传后的图片，建议设为公有，因此我们在上传图片到图床时要注意保护个人隐私</p>
-</blockquote>
-<p>设置完毕后点击下方按钮即可创建仓库，仓库的界面如下图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517181126.jpg" alt="仓库界面"></p>
-<h3 id="生成-token">生成 token</h3>
-<p>在使用 <code>GitHub</code> 图床时我们需要先生成一个 <a href="https://baike.baidu.com/item/Token/2615248">token</a>,生成过程也十分简单。</p>
-<p>首先我们点击 <code>GitHub</code> 首页的用户头像并点击 <code>Settings</code> 进入设置界面，如图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517204558.jpg" alt="Settings 界面"></p>
-<p>进入之后我们下拉至底部，点击 <code>Developer settings</code> 并选择第三个选项后，点击右上角的 <code>Generate new token</code> 进入配置界面，根据下图完成 <code>token</code> 的配置，并下拉至底部点击 <code>Generate token</code> 完成 <code>token</code> 的生成，之后即可直接将 <code>token</code> 复制到 <code>PicGo</code> 中。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125204.jpg" alt="配置 token"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125206.jpg" alt="生成的 token"></p>
-<blockquote>
-<p><strong>注：</strong>  <em>token</em> 只出现一次，因此我们需将其备份起来</p>
-</blockquote>
-<h2 id="PicGo">PicGo</h2>
-<h3 id="下载-PicGo">下载 PicGo</h3>
-<p>在使用 <code>PicGo</code> 前我们需要先到以下链接去下载,建议选择最新的稳定版本，<code>Beta</code> 版本稳定性相对没那么好。</p>
-<p><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
-<p>如果不是下载安装包，想看源码的话，可以选择 <code>git clone https://github.com/Molunerfinn/PicGo.git</code> 克隆到本地</p>
-<blockquote>
-<p><strong>注：</strong> <code>Mac</code> 用户选择 <code>.dmg</code> 下载， <code>Windows</code> 用户选择 <code>.exe</code> 下载。</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200518210625.jpg" alt="下载界面"></p>
-<p>安装完毕，打开后会以小图标形式显示在屏幕右下角，点击小图标即可打开详细窗口，窗口界面还是十分简洁大方的。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200518210623.jpg" alt="PicGo 小图标"></p>
-<h3 id="配置-PicGo">配置 PicGo</h3>
-<p>之后打开 <code>PicGo</code> 选择 <code>GitHub</code> 图床进行配置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125205.jpg" alt="PicGo 界面"></p>
-<ul>
-<li>
-<p>仓库名的格式为 <code>用户名/仓库</code> 比如我之前创建了一个 <code>PicBed</code> 的仓库，则我需要填入 <code>GuoJingtao-1997/PicBed</code>， 分支名一般填写 <code>master</code>，<code>token</code> 则输入之前我们已生成并备份好的 <code>token</code></p>
-</li>
-<li>
-<p>指定存储路径可选填，若填写则上传图片时 <code>GitHub</code> 仓库会自动创建新文件夹来保存图片</p>
-</li>
-<li>
-<p>设置自定义域名会使 <code>PicGo</code> 生成的访问链接为 <code>自定义域名+文件名</code> 的格式，而由于国内访问 <code>GitHub</code> 的速度比较慢，因此我们需要使用 <code>jsDelivr CDN</code> 进行加速，将自定义域名设置为 <code>https://cdn.jsdelivr.net/gh/用户名/图床仓库名</code> 即可</p>
-</li>
-</ul>
-<h3 id="使用-PicGo">使用 PicGo</h3>
-<p>接下来就可以愉快的开耍 <code>PicGo</code> 啦，选择相应的格式并将图片拖至相应位置即可上传，之后在相册中选择自己想要的格式并点击相应的图片下方最左侧的按钮即可复制图片的链接，上传图片的格式一般采用 <code>.jpg</code>，同时为了减轻 <code>GitHub</code> 服务器的压力，建议在上传图片前可以对其进行压缩，下面提供一个可进行无损压缩的网站供大家使用</p>
-<p><a href="https://tinypng.com/">https://tinypng.com/</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517153639.jpg" alt="PicGo 相册界面"></p>
-<blockquote>
-<p><strong>注：</strong> 有时会出现上传失败的情况，这时可以尝试将 <em>PicGo设置</em> 里的 <em>设置Server</em> 关闭后再打开或者重启 <em>PicGo</em></p>
-</blockquote>
-<p>大家可以自行探索 <code>PicGo</code> 的其他用法，希望本文的内容对大家有所帮助，也欢迎大家在下方留言指出其中错误或遗漏的地方.</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>图床</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-        <tag>PicGo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Wireless Sensing Based Self-Quarantine Monitoring System</title>
     <url>/archives/3ac6c873.html</url>
     <content><![CDATA[<h1>CSI-Based Efficient Self-Quarantine Monitoring System Using Branchy Convolution Neural Network</h1>
 <blockquote>
-<p>该工作目前已投稿至 <a href="https://wfiot2022.iot.ieee.org/">WF-IoT 2022</a>。代码已经<a href="">开源</a>，欢迎各位同学大佬们前来指点指点 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。</p>
+<p>该工作目前已投稿至 <a href="https://wfiot2022.iot.ieee.org/">WF-IoT 2022</a>。代码即将<a href="">开源</a>，欢迎各位同学大佬们前来指点指点 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>. 持续更新中</p>
 </blockquote>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
         <category>Wi-Fi Sensing</category>
-        <category>Quarantine Monitoring</category>
+        <category>Activity Detection</category>
         <category>Python</category>
         <category>Deep Learning</category>
       </categories>
       <tags>
         <tag>Raspberry Pi 4</tag>
         <tag>Channel State Information</tag>
+        <tag>COVID-19</tag>
         <tag>CNN</tag>
       </tags>
   </entry>
@@ -518,6 +436,89 @@ at every other level of the tree,starting at the root</p>
         <tag>Data Structure</tag>
         <tag>CS61A Summer20</tag>
         <tag>SICP for Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你用 GitHub+PicGo+jsDelivr 搭建免费的博客图床</title>
+    <url>/archives/1d23231.html</url>
+    <content><![CDATA[<blockquote>
+<p>利用 <em>GitHub</em> 和 <em>PicGo</em> 可以很方便的搭建私人图床</p>
+</blockquote>
+<h2 id="特点">特点</h2>
+<ul>
+<li>
+<p>实现图片文件的固定链接访问，使 <code>Markdown</code> 格式文章插入图片更方便</p>
+</li>
+<li>
+<p><code>GitHub</code> 仓库搭建图床操作简单且无需额外付费</p>
+</li>
+<li>
+<p><a href="https://www.jsdelivr.com/">jsDelivr</a> <code>CDN</code> 加速访问，解决国内 <code>GitHub</code> 访问速度慢的问题</p>
+</li>
+</ul>
+<h2 id="GitHub">GitHub</h2>
+<h3 id="注册-GitHub-账号">注册 GitHub 账号</h3>
+<p>在配置 <code>GitHub</code> 仓库之前我们要先拥有一个 <code>GitHub</code> 账号，如果你还没有的话，不妨点击<a href="https://github.com/join" title="github注册链接">这里</a>前往注册。</p>
+<h3 id="创建-GitHub-仓库">创建 GitHub 仓库</h3>
+<p>注册完毕后我们会看到以下界面，这里我们点击 <code>New</code> 创建一个新仓库</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125202.jpg" alt="GitHub 界面"></p>
+<p>点击 <code>New</code> 之后页面会跳转至如下界面，在该界面我们需要对仓库进行配置，具体填写步骤可参考图片内的指引</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517153638.jpg" alt="配置仓库属性"></p>
+<blockquote>
+<p><strong>注：</strong> 仓库类型如果选为私有，则在 <em>PicGo</em> 的相册中将看不到上传后的图片，建议设为公有，因此我们在上传图片到图床时要注意保护个人隐私</p>
+</blockquote>
+<p>设置完毕后点击下方按钮即可创建仓库，仓库的界面如下图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517181126.jpg" alt="仓库界面"></p>
+<h3 id="生成-token">生成 token</h3>
+<p>在使用 <code>GitHub</code> 图床时我们需要先生成一个 <a href="https://baike.baidu.com/item/Token/2615248">token</a>,生成过程也十分简单。</p>
+<p>首先我们点击 <code>GitHub</code> 首页的用户头像并点击 <code>Settings</code> 进入设置界面，如图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517204558.jpg" alt="Settings 界面"></p>
+<p>进入之后我们下拉至底部，点击 <code>Developer settings</code> 并选择第三个选项后，点击右上角的 <code>Generate new token</code> 进入配置界面，根据下图完成 <code>token</code> 的配置，并下拉至底部点击 <code>Generate token</code> 完成 <code>token</code> 的生成，之后即可直接将 <code>token</code> 复制到 <code>PicGo</code> 中。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125204.jpg" alt="配置 token"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125206.jpg" alt="生成的 token"></p>
+<blockquote>
+<p><strong>注：</strong>  <em>token</em> 只出现一次，因此我们需将其备份起来</p>
+</blockquote>
+<h2 id="PicGo">PicGo</h2>
+<h3 id="下载-PicGo">下载 PicGo</h3>
+<p>在使用 <code>PicGo</code> 前我们需要先到以下链接去下载,建议选择最新的稳定版本，<code>Beta</code> 版本稳定性相对没那么好。</p>
+<p><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
+<p>如果不是下载安装包，想看源码的话，可以选择 <code>git clone https://github.com/Molunerfinn/PicGo.git</code> 克隆到本地</p>
+<blockquote>
+<p><strong>注：</strong> <code>Mac</code> 用户选择 <code>.dmg</code> 下载， <code>Windows</code> 用户选择 <code>.exe</code> 下载。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200518210625.jpg" alt="下载界面"></p>
+<p>安装完毕，打开后会以小图标形式显示在屏幕右下角，点击小图标即可打开详细窗口，窗口界面还是十分简洁大方的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200518210623.jpg" alt="PicGo 小图标"></p>
+<h3 id="配置-PicGo">配置 PicGo</h3>
+<p>之后打开 <code>PicGo</code> 选择 <code>GitHub</code> 图床进行配置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517125205.jpg" alt="PicGo 界面"></p>
+<ul>
+<li>
+<p>仓库名的格式为 <code>用户名/仓库</code> 比如我之前创建了一个 <code>PicBed</code> 的仓库，则我需要填入 <code>GuoJingtao-1997/PicBed</code>， 分支名一般填写 <code>master</code>，<code>token</code> 则输入之前我们已生成并备份好的 <code>token</code></p>
+</li>
+<li>
+<p>指定存储路径可选填，若填写则上传图片时 <code>GitHub</code> 仓库会自动创建新文件夹来保存图片</p>
+</li>
+<li>
+<p>设置自定义域名会使 <code>PicGo</code> 生成的访问链接为 <code>自定义域名+文件名</code> 的格式，而由于国内访问 <code>GitHub</code> 的速度比较慢，因此我们需要使用 <code>jsDelivr CDN</code> 进行加速，将自定义域名设置为 <code>https://cdn.jsdelivr.net/gh/用户名/图床仓库名</code> 即可</p>
+</li>
+</ul>
+<h3 id="使用-PicGo">使用 PicGo</h3>
+<p>接下来就可以愉快的开耍 <code>PicGo</code> 啦，选择相应的格式并将图片拖至相应位置即可上传，之后在相册中选择自己想要的格式并点击相应的图片下方最左侧的按钮即可复制图片的链接，上传图片的格式一般采用 <code>.jpg</code>，同时为了减轻 <code>GitHub</code> 服务器的压力，建议在上传图片前可以对其进行压缩，下面提供一个可进行无损压缩的网站供大家使用</p>
+<p><a href="https://tinypng.com/">https://tinypng.com/</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/GuoJingtao-1997/PicBed/BlogImg/20200517153639.jpg" alt="PicGo 相册界面"></p>
+<blockquote>
+<p><strong>注：</strong> 有时会出现上传失败的情况，这时可以尝试将 <em>PicGo设置</em> 里的 <em>设置Server</em> 关闭后再打开或者重启 <em>PicGo</em></p>
+</blockquote>
+<p>大家可以自行探索 <code>PicGo</code> 的其他用法，希望本文的内容对大家有所帮助，也欢迎大家在下方留言指出其中错误或遗漏的地方.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>图床</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
 </search>

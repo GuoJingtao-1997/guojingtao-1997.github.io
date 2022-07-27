@@ -6,7 +6,7 @@
   <link href="https://guojingtao-1997.github.io/atom.xml" rel="self"/>
   
   <link href="https://guojingtao-1997.github.io/"/>
-  <updated>2022-07-17T14:23:59.735Z</updated>
+  <updated>2022-07-27T04:49:53.489Z</updated>
   <id>https://guojingtao-1997.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://guojingtao-1997.github.io/archives/3ac6c873.html"/>
     <id>https://guojingtao-1997.github.io/archives/3ac6c873.html</id>
     <published>2022-07-14T13:26:14.000Z</published>
-    <updated>2022-07-17T14:23:59.735Z</updated>
+    <updated>2022-07-27T04:49:53.489Z</updated>
     
     
       
@@ -38,16 +38,18 @@
     
     <category term="Wi-Fi Sensing" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/"/>
     
-    <category term="Quarantine Monitoring" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Quarantine-Monitoring/"/>
+    <category term="Activity Detection" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Activity-Detection/"/>
     
-    <category term="Python" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Quarantine-Monitoring/Python/"/>
+    <category term="Python" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Activity-Detection/Python/"/>
     
-    <category term="Deep Learning" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Quarantine-Monitoring/Python/Deep-Learning/"/>
+    <category term="Deep Learning" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Activity-Detection/Python/Deep-Learning/"/>
     
     
     <category term="Raspberry Pi 4" scheme="https://guojingtao-1997.github.io/tags/Raspberry-Pi-4/"/>
     
     <category term="Channel State Information" scheme="https://guojingtao-1997.github.io/tags/Channel-State-Information/"/>
+    
+    <category term="COVID-19" scheme="https://guojingtao-1997.github.io/tags/COVID-19/"/>
     
     <category term="CNN" scheme="https://guojingtao-1997.github.io/tags/CNN/"/>
     

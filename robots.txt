@@ -12,4 +12,6 @@ Disallow: /contact/
 Disallow: /tags/
 Disallow: /galleries/
 Disallow: /_data/
-Disallow: /movie/
+Disallow: /musics/
+Disallow: /navigate/
+Disallow: 404.md

@@ -6,7 +6,7 @@
   <link href="https://guojingtao-1997.github.io/atom.xml" rel="self"/>
   
   <link href="https://guojingtao-1997.github.io/"/>
-  <updated>2022-07-03T07:55:25.397Z</updated>
+  <updated>2022-07-17T14:23:59.735Z</updated>
   <id>https://guojingtao-1997.github.io/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Wireless Sensing Based Self-Quarantine Monitoring System</title>
+    <link href="https://guojingtao-1997.github.io/archives/3ac6c873.html"/>
+    <id>https://guojingtao-1997.github.io/archives/3ac6c873.html</id>
+    <published>2022-07-14T13:26:14.000Z</published>
+    <updated>2022-07-17T14:23:59.735Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;CSI-Based Efficient Self-Quarantine Monitoring System Using Branchy Convolution Neural Network&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该工作目前已投稿至 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Wi-Fi Sensing" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/"/>
+    
+    <category term="Quarantine Monitoring" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Quarantine-Monitoring/"/>
+    
+    <category term="Python" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Quarantine-Monitoring/Python/"/>
+    
+    <category term="Deep Learning" scheme="https://guojingtao-1997.github.io/categories/Wi-Fi-Sensing/Quarantine-Monitoring/Python/Deep-Learning/"/>
+    
+    
+    <category term="Raspberry Pi 4" scheme="https://guojingtao-1997.github.io/tags/Raspberry-Pi-4/"/>
+    
+    <category term="Channel State Information" scheme="https://guojingtao-1997.github.io/tags/Channel-State-Information/"/>
+    
+    <category term="CNN" scheme="https://guojingtao-1997.github.io/tags/CNN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS61A Disc09 - Linked Lists &amp; Trees</title>
     <link href="https://guojingtao-1997.github.io/archives/4fd3fcd6.html"/>
     <id>https://guojingtao-1997.github.io/archives/4fd3fcd6.html</id>
     <published>2021-01-06T00:00:00.000Z</published>
-    <updated>2022-07-03T07:55:25.397Z</updated>
+    <updated>2022-07-15T13:16:40.240Z</updated>
     
     
       
@@ -41,6 +78,8 @@
     
     <category term="Disc09" scheme="https://guojingtao-1997.github.io/tags/Disc09/"/>
     
+    <category term="Data Structure" scheme="https://guojingtao-1997.github.io/tags/Data-Structure/"/>
+    
     <category term="CS61A Summer20" scheme="https://guojingtao-1997.github.io/tags/CS61A-Summer20/"/>
     
     <category term="SICP for Python" scheme="https://guojingtao-1997.github.io/tags/SICP-for-Python/"/>
@@ -52,7 +91,7 @@
     <link href="https://guojingtao-1997.github.io/archives/1d23231.html"/>
     <id>https://guojingtao-1997.github.io/archives/1d23231.html</id>
     <published>2020-05-16T00:00:00.000Z</published>
-    <updated>2021-01-06T13:21:14.000Z</updated>
+    <updated>2022-07-15T04:01:25.370Z</updated>
     
     
       

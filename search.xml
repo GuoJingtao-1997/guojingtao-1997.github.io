@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Wireless Sensing Based Self-Quarantine Monitoring System</title>
-    <url>/archives/3ac6c873.html</url>
-    <content><![CDATA[<h1>CSI-Based Efficient Self-Quarantine Monitoring System Using Branchy Convolution Neural Network</h1>
-<blockquote>
-<p>该工作目前已投稿至 <a href="https://wfiot2022.iot.ieee.org/">WF-IoT 2022</a>。代码即将<a href="">开源</a>，欢迎各位同学大佬们前来指点指点 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>. 持续更新中</p>
-</blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>Wi-Fi Sensing</category>
-        <category>Activity Detection</category>
-        <category>Python</category>
-        <category>Deep Learning</category>
-      </categories>
-      <tags>
-        <tag>Raspberry Pi 4</tag>
-        <tag>Channel State Information</tag>
-        <tag>COVID-19</tag>
-        <tag>CNN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CS61A Disc09 - Linked Lists &amp; Trees</title>
     <url>/archives/4fd3fcd6.html</url>
     <content><![CDATA[<h1>CS61A Summer20 Disc09</h1>
@@ -436,6 +415,27 @@ at every other level of the tree,starting at the root</p>
         <tag>Data Structure</tag>
         <tag>CS61A Summer20</tag>
         <tag>SICP for Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Wireless Sensing Based Self-Quarantine Monitoring System</title>
+    <url>/archives/3ac6c873.html</url>
+    <content><![CDATA[<h1>CSI-Based Efficient Self-Quarantine Monitoring System Using Branchy Convolution Neural Network</h1>
+<blockquote>
+<p>该工作获<a href="https://www.polyu.edu.hk/eie/news-and-events/news/2022/2022-08-award-in-hong-kong-electronics-project-competition-2022/">2022年香港电子项目竞赛高等教育组冠军</a>, 相关论文目前已被 <a href="https://wfiot2022.iot.ieee.org/">WF-IoT 2022</a>会议接收。 代码已<a href="https://github.com/GuoJingtao-1997/CSI-Self-Quarantine_Monitoring">开源</a>，欢迎各位同学大佬们前来指点指点 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>. 持续更新中</p>
+</blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Wi-Fi Sensing</category>
+        <category>Activity Detection</category>
+        <category>Python</category>
+        <category>Deep Learning</category>
+      </categories>
+      <tags>
+        <tag>Raspberry Pi 4</tag>
+        <tag>Channel State Information</tag>
+        <tag>COVID-19</tag>
+        <tag>CNN</tag>
       </tags>
   </entry>
   <entry>
